@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karoseri Ambulan Indonesia</title>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./dist/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <header>
+      <nav class="w-full py-2 px-4 fixed top-0 left-0 bg-white border-b border-b-divider flex items-center justify-between lg:justify-around z-50">
+        <div class="px-4">
+          <a href="#">
+            <img src="./dist/img/LOGO-KAI.png" alt="" width="60" />
+          </a>
+        </div>
+        <div class="relative px-4">
+          <button id="dropdownTrigger" type="button" class="border py-1 px-4 lg:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div id="dropdownNav" class="hidden right-3 top-10 absolute w-64 text-black">
+            <div class="px-4 py-2 max-w-[250px] w-full bg-secondary flex flex-col gap-5 rounded-tl-lg rounded-b-lg">
+              <div class="px-2 text-white transition duration-150 hover:font-bold">
+                <a href="index.html">
+                  <div class="w-full rounded-lg">Home</div>
+                </a>
+              </div>
+              <div class="px-2 text-white transition duration-150 hover:font-bold">
+                <a href="src/model.html">
+                  <div class="w-full rounded-lg">Model</div>
+                </a>
+              </div>
+              <div class="px-2 text-white transition duration-150 hover:font-bold">
+                <a href="src/spesifikasi.html">
+                  <div class="w-full rounded-lg">Spesifikasi</div>
+                </a>
+              </div>
+              <div class="px-2 text-white transition duration-150 hover:font-bold">
+                <a href="src/about.html">
+                  <div class="w-full rounded-lg">Tentang Kami</div>
+                </a>
+              </div>
+              <div class="px-2 text-white transition duration-150 hover:font-bold">
+                <a href="src/kontak.html">
+                  <div class="w-full rounded-lg">Kontak</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden lg:flex gap-6">
+          <a href="index.html" class="h-full group">
+            <div class="py-2 px-5 text-lg transition duration-150 group-hover:bg-red-500 group-hover:text-white rounded-md border-b border-b-primary">Beranda</div>
+          </a>
+          <a href="src/model.html" class="h-full group">
+            <div class="py-2 px-5 text-lg transition duration-150 group-hover:bg-red-500 group-hover:text-white rounded-md">Model</div>
+          </a>
+          <a href="src/spesifikasi.html" class="h-full group">
+            <div class="py-2 px-5 text-lg transition duration-150 group-hover:bg-red-500 group-hover:text-white rounded-md">Spesifikasi</div>
+          </a>
+          <a href="src/about.html" class="h-full group">
+            <div class="py-2 px-5 text-lg transition duration-150 group-hover:bg-red-500 group-hover:text-white rounded-md">Tentang Kami</div>
+          </a>
+          <a href="src/kontak.html" class="h-full group">
+            <div class="py-2 px-5 text-lg transition duration-150 group-hover:bg-red-500 group-hover:text-white rounded-md">Kontak</div>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!-- Navbar End -->
+    <!-- Content Start -->
+    <section id="content" class="mt-[70px] max-w-[1366px] mx-auto mb-8">
+      <!-- Hero Section Start -->
+      <section id="hero" class="w-full">
+        <div class="container mx-auto">
+          <div id="hero-carousel" class="splide" role="group">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="./dist/img/carousel.jpg" alt="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="./dist/img/carousel2.jpg" alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero Section End -->
+      <!-- Model Section Start -->
+      <section id="model" class="w-full">
+        <div class="container mx-auto">
+          <div class="pt-6 px-4 flex flex-col gap-4">
+            <div class="flex items-center justify-between">
+              <h3 class="font-bold text-xl lg:text-3xl">Daftar Model</h3>
+              <a href="src/model.html" class="self-end">
+                <h3 class="text-sky-500 text-sm transition duration-150 hover:text-sky-600">Lihat Semua Model</h3>
+              </a>
+            </div>
+            <div class="w-full">
+              <div id="model-carousel" class="splide" role="group">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <div class="flex flex-col overflow-hidden rounded-xl bg-tertiary">
+                        <a href="#">
+                          <div class="w-full">
+                            <img src="./dist/img/product-1.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="p-2">
+                          <a href="#">
+                            <h3 class="text-sm text-white font-bold lg:text-xl">Hino Dutro Short</h3>
+                          </a>
+                          <a href="#">
+                            <button type="button" class="bg-secondary text-sm text-white mt-8 py-2 px-4 rounded-2xl transition duration-150 hover:bg-orange-500 lg:text-base">Details</button>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="flex flex-col overflow-hidden rounded-xl bg-tertiary">
+                        <a href="#">
+                          <div class="w-full">
+                            <img src="./dist/img/product-2.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="p-2">
+                          <a href="#">
+                            <h3 class="text-sm text-white font-bold lg:text-xl">Mitsubishi Strada Triton</h3>
+                          </a>
+                          <a href="#">
+                            <button type="button" class="bg-secondary text-sm text-white mt-8 py-2 px-4 rounded-2xl transition duration-150 hover:bg-orange-500 lg:text-base">Details</button>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="flex flex-col overflow-hidden rounded-xl bg-tertiary">
+                        <a href="#">
+                          <div class="w-full">
+                            <img src="./dist/img/product-3.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="p-2">
+                          <a href="#">
+                            <h3 class="text-sm text-white font-bold lg:text-xl">Kia Travello</h3>
+                          </a>
+                          <a href="#">
+                            <button type="button" class="bg-secondary text-sm text-white mt-8 py-2 px-4 rounded-2xl transition duration-150 hover:bg-orange-500 lg:text-base">Details</button>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="flex flex-col overflow-hidden rounded-xl bg-tertiary">
+                        <a href="#">
+                          <div class="w-full">
+                            <img src="./dist/img/product-4.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="p-2">
+                          <a href="#">
+                            <h3 class="text-sm text-white font-bold lg:text-xl">Mitsubishi L300</h3>
+                          </a>
+                          <a href="#">
+                            <button type="button" class="bg-secondary text-sm text-white mt-8 py-2 px-4 rounded-2xl transition duration-150 hover:bg-orange-500 lg:text-base">Details</button>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="flex flex-col overflow-hidden rounded-xl bg-tertiary">
+                        <a href="#">
+                          <div class="w-full">
+                            <img src="./dist/img/product-5.jpg" alt="" />
+                          </div>
+                        </a>
+                        <div class="p-2">
+                          <a href="#">
+                            <h3 class="text-sm text-white font-bold lg:text-xl">DFSK Super cab PU</h3>
+                          </a>
+                          <a href="#">
+                            <button type="button" class="bg-secondary text-sm text-white mt-8 py-2 px-4 rounded-2xl transition duration-150 hover:bg-orange-500 lg:text-base">Details</button>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="splide__slide border border-slate-300 flex justify-center items-center rounded-lg transition duration-150 hover:bg-slate-400">
+                      <a href="src/model.html" class="self-center hover:bg-slate-400">
+                        <div class="p-3 w-full h-full bg-transparent flex flex-col gap-4 items-center justify-center">
+                          <i class="fa-solid fa-angle-right fa-2xl"></i>
+                          <span class="text-2xl">Lainnya</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Model Section End -->
+      <!-- Keunggulan Section Start -->
+      <section id="keunggulan" class="w-full">
+        <div class="container mx-auto mt-8">
+          <div class="px-4 pt-8 pb-2 bg-slate-200 rounded-xl flex flex-col gap-14 items-center lg:flex-row lg:items-start">
+            <div class="w-full py-2 px-1 flex flex-col items-center gap-6 font-bold lg:w-1/4">
+              <i class="fa-solid fa-truck-fast fa-2xl text-secondary"></i>
+              <div class="flex flex-col gap-2">
+                <h3 class="text-xl font-bold text-center text-tertiary">Pengiriman ke Seluruh Indonesia</h3>
+                <p class="text-base text-center font-normal"><span class="text-primary font-bold">KAI</span> memberikan layanan pengiriman pesanan melalui Ekspedisi Kargo ke Seluruh Indonesia.</p>
+              </div>
+            </div>
+            <div class="w-full py-2 px-1 flex flex-col items-center gap-6 font-bold lg:w-1/4">
+              <i class="fa-solid fa-car fa-2xl text-secondary"></i>
+              <div class="flex flex-col gap-2">
+                <h3 class="text-xl font-bold text-center text-tertiary">Banyak Tipe Karoseri</h3>
+                <p class="text-base text-center font-normal"><span class="text-primary font-bold">KAI</span> Melayani pembuatan mobil promkes, mobil X-Ray, mobil dental, mobil donor darah, dan mobil pusling, food Truck, Bus, Dll.</p>
+              </div>
+            </div>
+            <div class="w-full py-2 px-1 flex flex-col items-center gap-6 font-bold lg:w-1/4">
+              <i class="fa-solid fa-shield-halved fa-2xl text-secondary"></i>
+              <div class="flex flex-col gap-2">
+                <h3 class="text-xl font-bold text-center text-tertiary">Produk Berkualitas tinggi</h3>
+                <p class="text-base text-center font-normal">Produk <span class="text-primary font-bold">KAI</span> dibuat dengan bahan dan kualitas yang terjamin, sehingga menghasilkan produk terbaik yang memiliki ketahanan tinggi.</p>
+              </div>
+            </div>
+            <div class="w-full py-2 px-1 flex flex-col items-center gap-6 font-bold lg:w-1/4">
+              <i class="fa-solid fa-award fa-2xl text-secondary"></i>
+              <div class="flex flex-col gap-2">
+                <h3 class="text-xl font-bold text-center text-tertiary">Pengalaman Lebih Dari 10 Tahun</h3>
+                <p class="text-base text-center font-normal"><span class="text-primary font-bold">KAI</span> telah menjalani aktivitas produksi sejak tahun 2003.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Keunggulan Section End -->
+    </section>
+    <!-- Content End -->
+    <!-- Footer Start -->
+    <footer>
+      <div class="container mx-auto bg-[#393938] pb-24 pt-6 px-4">
+        <div class="flex flex-col items-center">
+          <span class="text-white text-center">Copyright &#169; 2023 <span class="text-primary underline">Karoseri Ambulance Indonesia</span></span>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- Bottom Bar Section Start -->
+    <section id="BottomBar" class="relative flex items-center justify-center">
+      <div class="fixed w-full bottom-0 bg-slate-100 flex items-center rounded-t-lg overflow-hidden max-w-[1536px] mx-auto">
+        <a href="#" class="w-1/4">
+          <div class="py-4 flex flex-col items-center gap-4 bg-blue-500 text-white">
+            <i class="pt-2 fa-solid fa-phone fa-xl"></i>
+            <span class="text-xs text-center lg:text-sm">Telp Sekarang</span>
+          </div>
+        </a>
+        <a href="#" class="w-1/4">
+          <div class="py-4 flex flex-col items-center gap-4 bg-[#25d366] text-white">
+            <i class="pt-2 fa-brands fa-whatsapp fa-xl"></i>
+            <span class="text-xs text-center lg:text-sm">Whatsapp</span>
+          </div>
+        </a>
+        <a href="#" class="w-1/4">
+          <div class="py-4 flex flex-col items-center gap-4 bg-primary text-white">
+            <i class="pt-2 fa-solid fa-van-shuttle fa-xl"></i>
+            <span class="text-xs text-center lg:text-sm">Portfolio</span>
+          </div>
+        </a>
+        <a href="#" class="w-1/4">
+          <div class="py-4 flex flex-col items-center gap-4 bg-[#393938] text-white">
+            <i class="pt-2 fa-solid fa-location-dot fa-xl"></i>
+            <span class="text-xs text-center lg:text-sm">Alamat</span>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- Bottom Bar Section End -->
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/e1744d5724.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-intersection@0.2.0/dist/js/splide-extension-intersection.min.js"></script>
+    <script>
+      const dropdownT = document.getElementById("dropdownTrigger");
+      const navM = document.getElementById("dropdownNav");
+
+      dropdownT.addEventListener("click", () => navM.classList.toggle("hidden"));
+
+      new Splide("#hero-carousel", {
+        type: "loop",
+        autoplay: "pause",
+        arrows: false,
+        intersection: {
+          inView: {
+            autoplay: true,
+          },
+          outView: {
+            autoplay: false,
+          },
+        },
+      }).mount(window.splide.Extensions);
+
+      let width = window.innerWidth;
+      let height = window.innerHeight;
+
+      console.log(width);
+
+      new Splide("#model-carousel", {
+        perPage: 4,
+        breakpoints: {
+          1024: {
+            perPage: 2,
+          },
+        },
+        gap: "8px",
+        pagination: false,
+      }).mount(window.splide.Extensions);
+    </script>
+  </body>
+</html>
