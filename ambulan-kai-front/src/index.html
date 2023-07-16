@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Karoseri Ambulan Indonesia</title>
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../dist/css/style.css" />
   </head>
   <body>
@@ -82,7 +83,7 @@
     <!-- Content Start -->
     <section id="content" class="mt-[70px] max-w-[1366px] mx-auto mb-8">
       <!-- Hero Section Start -->
-      <section id="hero" class="w-full">
+      <section id="hero" class="w-full" data-aos="fade-down" data-aos-duration="1000">
         <div class="container mx-auto">
           <div id="hero-carousel" class="splide" role="group">
             <div class="splide__track">
@@ -100,7 +101,7 @@
       </section>
       <!-- Hero Section End -->
       <!-- Keunggulan Section Start -->
-      <section id="keunggulan" class="w-full">
+      <section id="keunggulan" class="w-full" data-aos="zoom-in" data-aos-duration="1000">
         <div class="container mx-auto mt-8">
           <div class="px-4 py-8 bg-slate-200 rounded-xl flex flex-col gap-16">
             <div class="w-full flex items-center justify-center">
@@ -141,7 +142,7 @@
       </section>
       <!-- Keunggulan Section End -->
       <!-- Model Section Start -->
-      <section id="model" class="w-full">
+      <section id="model" class="w-full" data-aos="fade-left" data-aos-duration="1000">
         <div class="container mx-auto">
           <div class="pt-6 px-4 flex flex-col gap-4">
             <div class="flex items-center justify-between">
@@ -257,7 +258,7 @@
       </section>
       <!-- Model Section End -->
       <!-- CTA Section Start -->
-      <section id="cta" class="w-full">
+      <section id="cta" class="w-full" data-aos="flip-right" data-aos-duration="1000">
         <div class="container mx-auto mt-8">
           <div class="w-full p-8 grid grid-cols-1 gap-10 rounded-lg overflow-hidden bg-center bg-cover relative lg:grid-cols-2">
             <img src="../dist/img/bg-cta.jpg" alt="" class="absolute inset-0 h-full w-full object-cover blur-sm -z-20" />
@@ -322,7 +323,10 @@
     <script src="https://kit.fontawesome.com/e1744d5724.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-intersection@0.2.0/dist/js/splide-extension-intersection.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+      AOS.init();
+
       const dropdownT = document.getElementById("dropdownTrigger");
       const navM = document.getElementById("dropdownNav");
 
