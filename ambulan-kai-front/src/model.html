@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karoseri Ambulan Indonesia</title>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../dist/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <header>
+      <nav class="w-full py-2 px-4 fixed top-0 left-0 bg-white border-b border-b-divider flex items-center justify-between lg:justify-around z-50">
+        <div class="px-4">
+          <a href="#">
+            <img src="../dist/img/LOGO-KAI.png" alt="" width="60" />
+          </a>
+        </div>
+        <div class="relative px-4">
+          <button id="dropdownTrigger" type="button" class="border py-1 px-4 lg:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div id="dropdownNav" class="hidden right-3 top-10 absolute w-64 text-black">
+            <div class="px-4 py-2 max-w-[250px] w-full bg-secondary flex flex-col gap-5 rounded-tl-lg rounded-b-lg">
+              <div class="px-2 text-white transition duration-150 hover:font-bold">
+                <a href="index.html">
+                  <div class="w-full rounded-lg">Home</div>
+                </a>
+              </div>
+              <div class="px-2 text-white transition duration-150 hover:font-bold">
+                <a href="model.html">
+                  <div class="w-full rounded-lg">Model</div>
+                </a>
+              </div>
+              <div class="px-2 text-white transition duration-150 hover:font-bold">
+                <a href="spesifikasi.html">
+                  <div class="w-full rounded-lg">Spesifikasi</div>
+                </a>
+              </div>
+              <div class="px-2 text-white transition duration-150 hover:font-bold">
+                <a href="about.html">
+                  <div class="w-full rounded-lg">Tentang Kami</div>
+                </a>
+              </div>
+              <div class="px-2 text-white transition duration-150 hover:font-bold">
+                <a href="kontak.html">
+                  <div class="w-full rounded-lg">Kontak</div>
+                </a>
+              </div>
+              <div class="px-2 py-2 text-white bg-tertiary rounded-md transition duration-150 hover:font-bold">
+                <a href="wa.me">
+                  <div class="w-full rounded-lg">Minta Penawaran</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden lg:flex gap-6">
+          <a href="index.html" class="h-full group">
+            <div class="py-2 px-5 text-lg transition duration-150 group-hover:bg-red-500 group-hover:text-white rounded-md">Beranda</div>
+          </a>
+          <a href="model.html" class="h-full group">
+            <div class="py-2 px-5 text-lg transition duration-150 group-hover:bg-red-500 group-hover:text-white rounded-md active-navbar">Model</div>
+          </a>
+          <a href="spesifikasi.html" class="h-full group">
+            <div class="py-2 px-5 text-lg transition duration-150 group-hover:bg-red-500 group-hover:text-white rounded-md">Spesifikasi</div>
+          </a>
+          <a href="about.html" class="h-full group">
+            <div class="py-2 px-5 text-lg transition duration-150 group-hover:bg-red-500 group-hover:text-white rounded-md">Tentang Kami</div>
+          </a>
+          <a href="kontak.html" class="h-full group">
+            <div class="py-2 px-5 text-lg transition duration-150 group-hover:bg-red-500 group-hover:text-white rounded-md">Kontak</div>
+          </a>
+          <a href="wa.me" class="h-full group">
+            <div class="py-2 px-5 text-lg transition duration-150 bg-secondary text-white group-hover:bg-[#d77d1c] rounded-md">Minta Penawaran</div>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!-- Navbar End -->
+    <!-- Content Start -->
+    <section id="content" class="mt-[70px] max-w-[1366px] mx-auto mb-8">
+      <!-- Judul Model Start -->
+      <section id="judul">
+        <div class="container mx-auto">
+          <div class="py-8 px-4 bg-gradient-to-br from-primary to-secondary">
+            <h2 class="font-bold text-xl text-white lg:text-3xl">MODEL</h2>
+            <span class="text-white text-sm">Model yang didukung Karoseri Ambulance Indonesia</span>
+          </div>
+        </div>
+      </section>
+      <!-- Judul Model End -->
+      <!-- Model Section Start -->
+      <section id="product" class="mt-4">
+        <div class="container mx-auto">
+          <div class="py-4 bg-slate-200 flex flex-col items-center justify-center gap-4 relative lg:hidden">
+            <button type="button" id="dropdownBtnFilter" class="bg-primary py-2 px-4 rounded-lg">
+              <span class="text-white text-base"><i class="fa-solid fa-filter fa-xs"></i> Filter</span>
+            </button>
+            <div id="dropdownFilter" class="hidden absolute top-16">
+              <div class="px-4 py-4 bg-gray-100 flex flex-col items-start">
+                <div class="flex flex-col gap-2">
+                  <h2 class="font-bold text-base border-l border-l-primary px-2">Sort By</h2>
+                  <form action="" class="flex flex-col gap-2 px-2">
+                    <label for="abjad" class="cursor-pointer"><input type="radio" name="sort" id="abjad" class="accent-primary" checked /> A-Z</label>
+                    <label for="newest" class="cursor-pointer"><input type="radio" name="sort" id="newest" class="accent-primary" /> Terbaru</label>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- Model Mobile Start -->
+            <div class="w-full px-2 grid grid-cols-2 gap-4">
+              <div class="flex flex-col items-center overflow-hidden rounded-xl bg-white border shadow-md-right">
+                <a href="#">
+                  <div class="w-full">
+                    <img src="../dist/img/product-1.jpg" alt="" />
+                  </div>
+                </a>
+                <div class="w-full h-36 p-2 flex flex-col items-center justify-between">
+                  <a href="#" class="w-full self-start">
+                    <h3 class="text-base text-primary font-bold text-center lg:text-xl">Hino Dutro Short</h3>
+                  </a>
+                  <a href="#" class="w-full self-end">
+                    <button type="button" class="w-full bg-secondary text-sm text-white py-2 px-4 rounded-md transition duration-150 hover:bg-orange-500 lg:text-base">Details Ambulance</button>
+                  </a>
+                </div>
+              </div>
+              <div class="flex flex-col items-center overflow-hidden rounded-xl bg-white border shadow-md-right">
+                <a href="#">
+                  <div class="w-full">
+                    <img src="../dist/img/product-2.jpg" alt="" />
+                  </div>
+                </a>
+                <div class="w-full h-36 p-2 flex flex-col items-center justify-between">
+                  <a href="#" class="w-full self-start">
+                    <h3 class="text-base text-primary font-bold text-center lg:text-xl">Mitsubishi Strada Triton</h3>
+                  </a>
+                  <a href="#" class="w-full self-end">
+                    <button type="button" class="w-full bg-secondary text-sm text-white py-2 px-4 rounded-md transition duration-150 hover:bg-orange-500 lg:text-base">Details Ambulance</button>
+                  </a>
+                </div>
+              </div>
+              <div class="flex flex-col items-center overflow-hidden rounded-xl bg-white border shadow-md-right">
+                <a href="#">
+                  <div class="w-full">
+                    <img src="../dist/img/product-3.jpg" alt="" />
+                  </div>
+                </a>
+                <div class="w-full h-36 p-2 flex flex-col items-center justify-between">
+                  <a href="#" class="w-full self-start">
+                    <h3 class="text-base text-primary font-bold text-center lg:text-xl">Kia Travello</h3>
+                  </a>
+                  <a href="#" class="w-full self-end">
+                    <button type="button" class="w-full bg-secondary text-sm text-white py-2 px-4 rounded-md transition duration-150 hover:bg-orange-500 lg:text-base">Details Ambulance</button>
+                  </a>
+                </div>
+              </div>
+              <div class="flex flex-col items-center overflow-hidden rounded-xl bg-white border shadow-md-right">
+                <a href="#">
+                  <div class="w-full">
+                    <img src="../dist/img/product-4.jpg" alt="" />
+                  </div>
+                </a>
+                <div class="w-full h-36 p-2 flex flex-col items-center justify-between">
+                  <a href="#" class="w-full self-start">
+                    <h3 class="text-base text-primary font-bold text-center lg:text-xl">Mitsubishi L300</h3>
+                  </a>
+                  <a href="#" class="w-full self-end">
+                    <button type="button" class="w-full bg-secondary text-sm text-white py-2 px-4 rounded-md transition duration-150 hover:bg-orange-500 lg:text-base">Details Ambulance</button>
+                  </a>
+                </div>
+              </div>
+              <div class="flex flex-col items-center overflow-hidden rounded-xl bg-white border shadow-md-right">
+                <a href="#">
+                  <div class="w-full">
+                    <img src="../dist/img/product-5.jpg" alt="" />
+                  </div>
+                </a>
+                <div class="w-full h-36 p-2 flex flex-col items-center justify-between">
+                  <a href="#" class="w-full self-start">
+                    <h3 class="text-base text-primary font-bold text-center lg:text-xl">DFSK Super Cab</h3>
+                  </a>
+                  <a href="#" class="w-full self-end">
+                    <button type="button" class="w-full bg-secondary text-sm text-white py-2 px-4 rounded-md transition duration-150 hover:bg-orange-500 lg:text-base">Details Ambulance</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Model Mobile End -->
+          </div>
+          <!-- Model Desktop Start -->
+          <div class="hidden w-full bg-white rounded-lg lg:flex gap-0">
+            <div class="w-1/5 flex flex-col py-4 px-4 gap-4">
+              <h2 class="text-2xl font-bold">Filter</h2>
+              <div class="px-2 flex flex-col gap-1">
+                <h3 class="pl-2 border-l-2 border-l-primary font-bold text-lg">Sort By</h3>
+                <form action="" class="pl-2 flex flex-col gap-2">
+                  <label for="abjad" class="cursor-pointer"><input type="radio" name="sort" id="abjad" class="accent-primary" checked /> A-Z</label>
+                  <label for="abjad" class="cursor-pointer"><input type="radio" name="sort" id="abjad" class="accent-primary" /> Terbaru</label>
+                </form>
+              </div>
+              <div class="px-2 flex flex-col gap-1">
+                <h3 class="pl-2 border-l-2 border-l-primary font-bold text-lg">Berdasarkan Merk</h3>
+                <form action="" class="pl-2 flex flex-col gap-2">
+                  <label for="daihatsu">
+                    <input type="checkbox" name="daihatsu" id="daihatsu" class="accent-primary" />
+                    Daihatsu ()
+                  </label>
+                  <label for="toyota">
+                    <input type="checkbox" name="toyota" id="toyota" class="accent-primary" />
+                    Toyota ()
+                  </label>
+                  <label for="honda">
+                    <input type="checkbox" name="honda" id="honda" class="accent-primary" />
+                    Honda ()
+                  </label>
+                  <label for="hyundai">
+                    <input type="checkbox" name="hyundai" id="hyundai" class="accent-primary" />
+                    Hyundai ()
+                  </label>
+                  <label for="mitsubishi">
+                    <input type="checkbox" name="mitsubishi" id="mitsubishi" class="accent-primary" />
+                    Mitsubishi ()
+                  </label>
+                  <button type="submit" class="mt-4 w-1/2 bg-secondary py-2 px-4 rounded-lg text-white transition duration-150 hover:bg-orange-600">Terapkan</button>
+                </form>
+              </div>
+            </div>
+            <div class="w-4/5 border-l border-l-divider p-4">
+              <div class="w-full grid grid-cols-3 gap-4">
+                <div class="flex flex-col items-center overflow-hidden rounded-xl bg-white border shadow-md-right">
+                  <a href="#">
+                    <div class="w-full">
+                      <img src="../dist/img/product-1.jpg" alt="" />
+                    </div>
+                  </a>
+                  <div class="w-full h-36 p-2 flex flex-col items-center justify-between">
+                    <a href="#" class="w-full self-start">
+                      <h3 class="text-base text-primary font-bold text-center lg:text-xl">Hino Dutro Short</h3>
+                    </a>
+                    <a href="#" class="w-full self-end">
+                      <button type="button" class="w-full bg-secondary text-sm text-white py-2 px-4 rounded-md transition duration-150 hover:bg-orange-500 lg:text-base">Details Ambulance</button>
+                    </a>
+                  </div>
+                </div>
+                <div class="flex flex-col items-center overflow-hidden rounded-xl bg-white border shadow-md-right">
+                  <a href="#">
+                    <div class="w-full">
+                      <img src="../dist/img/product-2.jpg" alt="" />
+                    </div>
+                  </a>
+                  <div class="w-full h-36 p-2 flex flex-col items-center justify-between">
+                    <a href="#" class="w-full self-start">
+                      <h3 class="text-base text-primary font-bold text-center lg:text-xl">Mitsubishi Strada Triton</h3>
+                    </a>
+                    <a href="#" class="w-full self-end">
+                      <button type="button" class="w-full bg-secondary text-sm text-white py-2 px-4 rounded-md transition duration-150 hover:bg-orange-500 lg:text-base">Details Ambulance</button>
+                    </a>
+                  </div>
+                </div>
+                <div class="flex flex-col items-center overflow-hidden rounded-xl bg-white border shadow-md-right">
+                  <a href="#">
+                    <div class="w-full">
+                      <img src="../dist/img/product-3.jpg" alt="" />
+                    </div>
+                  </a>
+                  <div class="w-full h-36 p-2 flex flex-col items-center justify-between">
+                    <a href="#" class="w-full self-start">
+                      <h3 class="text-base text-primary font-bold text-center lg:text-xl">Kia Travello</h3>
+                    </a>
+                    <a href="#" class="w-full self-end">
+                      <button type="button" class="w-full bg-secondary text-sm text-white py-2 px-4 rounded-md transition duration-150 hover:bg-orange-500 lg:text-base">Details Ambulance</button>
+                    </a>
+                  </div>
+                </div>
+                <div class="flex flex-col items-center overflow-hidden rounded-xl bg-white border shadow-md-right">
+                  <a href="#">
+                    <div class="w-full">
+                      <img src="../dist/img/product-4.jpg" alt="" />
+                    </div>
+                  </a>
+                  <div class="w-full h-36 p-2 flex flex-col items-center justify-between">
+                    <a href="#" class="w-full self-start">
+                      <h3 class="text-base text-primary font-bold text-center lg:text-xl">Mitsubishi L300</h3>
+                    </a>
+                    <a href="#" class="w-full self-end">
+                      <button type="button" class="w-full bg-secondary text-sm text-white py-2 px-4 rounded-md transition duration-150 hover:bg-orange-500 lg:text-base">Details Ambulance</button>
+                    </a>
+                  </div>
+                </div>
+                <div class="flex flex-col items-center overflow-hidden rounded-xl bg-white border shadow-md-right">
+                  <a href="#">
+                    <div class="w-full">
+                      <img src="../dist/img/product-5.jpg" alt="" />
+                    </div>
+                  </a>
+                  <div class="w-full h-36 p-2 flex flex-col items-center justify-between">
+                    <a href="#" class="w-full self-start">
+                      <h3 class="text-base text-primary font-bold text-center lg:text-xl">DFSK Super Cab</h3>
+                    </a>
+                    <a href="#" class="w-full self-end">
+                      <button type="button" class="w-full bg-secondary text-sm text-white py-2 px-4 rounded-md transition duration-150 hover:bg-orange-500 lg:text-base">Details Ambulance</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Model Desktop End -->
+        </div>
+      </section>
+      <!-- Model Section End -->
+    </section>
+    <!-- Content End -->
+    <!-- Footer Start -->
+    <footer>
+      <div class="container mx-auto bg-[#393938] pb-24 pt-6 px-4">
+        <div class="flex flex-col items-center">
+          <span class="text-white text-center">Copyright &#169; 2023 <span class="text-primary underline">Karoseri Ambulance Indonesia</span></span>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- Bottom Bar Section Start -->
+    <section id="BottomBar" class="relative flex items-center justify-center">
+      <div class="fixed w-full bottom-0 bg-slate-100 flex items-center rounded-t-lg overflow-hidden max-w-[1536px] mx-auto">
+        <a href="#" class="w-1/4">
+          <div class="py-4 flex flex-col items-center gap-4 bg-blue-500 text-white transition duration-150 hover:bg-blue-600">
+            <i class="pt-2 fa-solid fa-phone fa-xl"></i>
+            <span class="text-xs text-center lg:text-sm">Telp Sekarang</span>
+          </div>
+        </a>
+        <a href="#" class="w-1/4">
+          <div class="py-4 flex flex-col items-center gap-4 bg-[#25d366] text-white transition duration-150 hover:bg-[#22be5b]">
+            <i class="pt-2 fa-brands fa-whatsapp fa-xl"></i>
+            <span class="text-xs text-center lg:text-sm">Whatsapp</span>
+          </div>
+        </a>
+        <a href="#" class="w-1/4">
+          <div class="py-4 flex flex-col items-center gap-4 bg-primary text-white transition duration-150 hover:bg-red-600">
+            <i class="pt-2 fa-solid fa-van-shuttle fa-xl"></i>
+            <span class="text-xs text-center lg:text-sm">Portfolio</span>
+          </div>
+        </a>
+        <a href="#" class="w-1/4">
+          <div class="py-4 flex flex-col items-center gap-4 bg-[#393938] text-white transition duration-150 hover:bg-gray-500">
+            <i class="pt-2 fa-solid fa-location-dot fa-xl"></i>
+            <span class="text-xs text-center lg:text-sm">Alamat</span>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- Bottom Bar Section End -->
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/e1744d5724.js" crossorigin="anonymous"></script>
+    <script>
+      const dropdownT = document.getElementById("dropdownTrigger");
+      const navM = document.getElementById("dropdownNav");
+      const dropdownFilter = document.getElementById("dropdownFilter");
+      const dropdownBtnFilter = document.getElementById("dropdownBtnFilter");
+
+      dropdownT.addEventListener("click", () => navM.classList.toggle("hidden"));
+      dropdownBtnFilter.addEventListener("click", () => dropdownFilter.classList.toggle("hidden"));
+    </script>
+  </body>
+</html>
